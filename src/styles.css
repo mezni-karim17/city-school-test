@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.user-container {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

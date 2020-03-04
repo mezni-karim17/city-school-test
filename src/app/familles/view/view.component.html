@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+<div class="row">
+  <table class="table table-strip">
+    <tr class="bg-dark text-white">
+        <td> ID</td>
+        <td> User Name </td>
+        <td> Email </td>
+        <td> First Name </td>
+        <td> Last Name </td>
+        <td> Age </td>
+         <td> Action </td>
+    </tr>
+
+    <tr *ngFor="let user of this.users">
+      <td>{{user.id}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.age}}</td>
+      <td><a href="javascript:void(0);" class="btn btn-success" (click)="edit(user)" >Edit</a> /
+      <a href="javascript:void(0);" class="btn btn-danger"
+     (click)="deleteUser(user)"
+
+      >Delete</a></td>
+  </tr>
+  <tr>
+       <td>&nbsp;</td>
+        <td><a [routerLink]="['/add']" class="btn btn-success btn-lg">Add Famille</a></td>
+  </tr>
+  </table>
+
+</div>
